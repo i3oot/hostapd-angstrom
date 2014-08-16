@@ -11,5 +11,7 @@ make
 mkdir -p $DESTDIR/usr/local/bin
 make install
 popd
+mkdir $DESTDIR/etc
+cp hostapd-2.2/hostapd/hostapd.conf $DESTDIR/etc/
 ./ipkg-build build .
 
