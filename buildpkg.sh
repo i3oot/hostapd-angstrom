@@ -9,5 +9,5 @@ sed -r -i "s/#CONFIG_LIBNL32=y/CONFIG_LIBNL32=y/" .config
 make
 export DESTDIR=`pwd`/build
 make install
-./ipkg-build.sh build .
+./ipkg-build build .
 
